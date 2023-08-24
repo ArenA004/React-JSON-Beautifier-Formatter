@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.accordion-section {
+  background-color: #687980;
+}
+
+.accordion-wrapper{
+  background-color: #687980;
+  color: #F5F2E7;
+  height: 100%;
+  width: auto;
+}
+
+.accordion {
+  width: 25%;
+  height: auto;
+  padding: 15px;
+}
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  cursor: pointer;
+  background-color: #2C3333;
+}
+
+.accordion-title span {
+  font-size: 30px;
+  padding-right: 5px;
+}
+
+.accordion-items {
+  padding: 15px;
+  margin: 5px 0;
+  font-weight: lighter;
+  
+}
+
+.accordion-item {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid #2C3333; */
+  margin: 2px;
+  cursor: pointer;
+  transition: 0.20s ease;
+  background-color: #4f4f53;
+}
+
+.accordion-item:hover{
+  transform: translate(5px, 5px);
+  transform: scale(5px);
+  background-color: #cfe3f3;
+  font-weight: bold;
+  color:#2C3333
+}
+
+.destination {
+  padding-left: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.destination.active {
+  height: auto;
+  max-height: 999px;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.origin {
+  padding-left: 30px;
+  font-weight: 300;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+.origin.active {
+  height: auto;
+  max-height: 999;
+  transition: all 0.5s cubic-bezier(0,1,0,1);
+}
+
+
